@@ -1,0 +1,35 @@
+{
+  "name": "ai-content-ideation-platform",
+  "version": "0.1.0",
+  "description": "Web application that generates blog post, video, and social media content ideas using AI",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "build": "cd frontend && npm run build",
+    "test": "concurrently \"cd backend && npm test\" \"cd frontend && npm test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/ai-content-ideation-platform.git"
+  },
+  "keywords": [
+    "ai",
+    "content",
+    "ideas",
+    "generator",
+    "blog",
+    "social-media",
+    "video"
+  ],
+  "author": "AI Web App Generator",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/ai-content-ideation-platform/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/ai-content-ideation-platform#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
